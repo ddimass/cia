@@ -1,0 +1,135 @@
+[08-Mar-2018 10:08:06 UTC] PHP Parse error:  syntax error, unexpected '$menuItems' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 68
+[08-Mar-2018 10:08:06 UTC] PHP Stack trace:
+[08-Mar-2018 10:08:06 UTC] PHP   1. yii\base\ErrorHandler->handleException() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php:0
+[08-Mar-2018 10:08:06 UTC] PHP   2. yii\web\ErrorHandler->renderException() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php:111
+[08-Mar-2018 10:08:06 UTC] PHP   3. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorHandler.php:108
+[08-Mar-2018 10:08:06 UTC] PHP   4. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:08:06 UTC] PHP   5. yii\base\Action->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:08:06 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94
+[08-Mar-2018 10:08:06 UTC] PHP   7. yii\web\ErrorAction->run() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94
+[08-Mar-2018 10:08:06 UTC] PHP   8. yii\web\ErrorAction->renderHtmlResponse() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorAction.php:118
+[08-Mar-2018 10:08:06 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorAction.php:139
+[08-Mar-2018 10:08:06 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:08:06 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:08:06 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:08:06 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:08:06 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:08:06 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:08:06 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:09:04 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 69
+[08-Mar-2018 10:09:04 UTC] PHP Stack trace:
+[08-Mar-2018 10:09:04 UTC] PHP   1. yii\base\ErrorHandler->handleException() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php:0
+[08-Mar-2018 10:09:04 UTC] PHP   2. yii\web\ErrorHandler->renderException() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php:111
+[08-Mar-2018 10:09:04 UTC] PHP   3. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorHandler.php:108
+[08-Mar-2018 10:09:04 UTC] PHP   4. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:09:04 UTC] PHP   5. yii\base\Action->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:09:04 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94
+[08-Mar-2018 10:09:04 UTC] PHP   7. yii\web\ErrorAction->run() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Action.php:94
+[08-Mar-2018 10:09:04 UTC] PHP   8. yii\web\ErrorAction->renderHtmlResponse() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorAction.php:118
+[08-Mar-2018 10:09:04 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorAction.php:139
+[08-Mar-2018 10:09:04 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:09:04 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:09:04 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:09:04 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:09:04 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:09:04 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:09:04 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:14:14 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/ubuntu/workspace/cia/backend/config/main.php on line 19
+[08-Mar-2018 10:14:14 UTC] PHP Stack trace:
+[08-Mar-2018 10:14:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 10:15:19 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 79
+[08-Mar-2018 10:15:19 UTC] PHP Stack trace:
+[08-Mar-2018 10:15:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 10:15:19 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[08-Mar-2018 10:15:19 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[08-Mar-2018 10:15:19 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[08-Mar-2018 10:15:19 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:15:19 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:15:19 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:15:19 UTC] PHP   8. backend\controllers\SiteController->actionIndex() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:15:19 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/backend/controllers/SiteController.php:63
+[08-Mar-2018 10:15:19 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:15:19 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:15:19 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:15:19 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:15:19 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:15:19 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:15:19 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:15:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 79
+[08-Mar-2018 10:15:49 UTC] PHP Stack trace:
+[08-Mar-2018 10:15:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 10:15:49 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[08-Mar-2018 10:15:49 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[08-Mar-2018 10:15:49 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[08-Mar-2018 10:15:49 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:15:49 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:15:49 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:15:49 UTC] PHP   8. backend\controllers\SiteController->actionIndex() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:15:49 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/backend/controllers/SiteController.php:63
+[08-Mar-2018 10:15:49 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:15:49 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:15:49 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:15:49 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:15:49 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:15:49 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:15:49 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:16:25 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 69
+[08-Mar-2018 10:16:25 UTC] PHP Stack trace:
+[08-Mar-2018 10:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 10:16:25 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[08-Mar-2018 10:16:25 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[08-Mar-2018 10:16:25 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[08-Mar-2018 10:16:25 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:16:25 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:16:25 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:16:25 UTC] PHP   8. backend\controllers\SiteController->actionIndex() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:16:25 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/backend/controllers/SiteController.php:63
+[08-Mar-2018 10:16:25 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:16:25 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:16:25 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:16:25 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:16:25 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:16:25 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:16:25 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:25:55 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/cia/backend/views/layouts/left.php on line 79
+[08-Mar-2018 10:25:55 UTC] PHP Stack trace:
+[08-Mar-2018 10:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 10:25:55 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[08-Mar-2018 10:25:55 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[08-Mar-2018 10:25:55 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[08-Mar-2018 10:25:55 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 10:25:55 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 10:25:55 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:25:55 UTC] PHP   8. backend\controllers\SiteController->actionIndex() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 10:25:55 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/backend/controllers/SiteController.php:63
+[08-Mar-2018 10:25:55 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 10:25:55 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 10:25:55 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 10:25:55 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 10:25:55 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:51
+[08-Mar-2018 10:25:55 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 10:25:55 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 11:40:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cia/backend/views/layouts/header.php on line 230
+[08-Mar-2018 11:40:36 UTC] PHP Stack trace:
+[08-Mar-2018 11:40:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[08-Mar-2018 11:40:36 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[08-Mar-2018 11:40:36 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[08-Mar-2018 11:40:36 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[08-Mar-2018 11:40:36 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[08-Mar-2018 11:40:36 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[08-Mar-2018 11:40:36 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 11:40:36 UTC] PHP   8. mdm\admin\controllers\AssignmentController->actionIndex() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[08-Mar-2018 11:40:36 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/vendor/mdmsoft/yii2-admin/controllers/AssignmentController.php:78
+[08-Mar-2018 11:40:36 UTC] PHP  10. yii\base\Controller->renderContent() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:385
+[08-Mar-2018 11:40:36 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:399
+[08-Mar-2018 11:40:36 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 11:40:36 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 11:40:36 UTC] PHP  14. yii\base\View->endContent() /home/ubuntu/workspace/cia/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php:41
+[08-Mar-2018 11:40:36 UTC] PHP  15. yii\base\Widget::end() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:509
+[08-Mar-2018 11:40:36 UTC] PHP  16. yii\widgets\ContentDecorator->run() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Widget.php:109
+[08-Mar-2018 11:40:36 UTC] PHP  17. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/widgets/ContentDecorator.php:79
+[08-Mar-2018 11:40:36 UTC] PHP  18. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[08-Mar-2018 11:40:36 UTC] PHP  19. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[08-Mar-2018 11:40:36 UTC] PHP  20. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:46
+[08-Mar-2018 11:40:36 UTC] PHP  21. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[08-Mar-2018 11:40:36 UTC] PHP  22. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254

@@ -30,15 +30,26 @@
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
+                    
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
-                        'label' => 'Some tools',
+                        'label' => Yii::t('main', 'Administration'),
                         'icon' => 'share',
                         'url' => '#',
                         'items' => [
+                            ['label' => Yii::t('main', 'User managment'), 'icon' => 'file-code-o', 'url' => ['/admin'],],
+                            ['label' => Yii::t('language', 'Language'), 'items' => [
+                                ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],
+                                ['label' => Yii::t('language', 'Create'), 'url' => ['/translatemanager/language/create']],
+                                ['label' => Yii::t('language', 'Scan'), 'url' => ['/translatemanager/language/scan']],
+                                ['label' => Yii::t('language', 'Optimize'), 'url' => ['/translatemanager/language/optimizer']],
+                                ['label' => Yii::t('language', 'Im-/Export'), 'items' => [
+                                    ['label' => Yii::t('language', 'Import'), 'url' => ['/translatemanager/language/import']],
+                                    ['label' => Yii::t('language', 'Export'), 'url' => ['/translatemanager/language/export']],
+                                ]]]],
                             ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
                             ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             [
@@ -62,7 +73,15 @@
                     ],
                 ],
             ]
-        ) ?>
+
+
+
+        ) 
+        
+        
+      
+
+        ?>
 
     </section>
 

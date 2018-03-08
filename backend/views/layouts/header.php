@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 <header class="main-header">
 
-    <?= Html::a('<span class="logo-mini">APP</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
+    <?= Html::a('<span class="logo-mini">' . Yii::$app->params['shortname'] . '</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
     <nav class="navbar navbar-static-top" role="navigation">
 
@@ -226,12 +226,19 @@ use yii\helpers\Html;
                     </ul>
                 </li>
                 <!-- User Account: style can be found in dropdown.less -->
-
+                <li class="language">                          
+                    <?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+    'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+    'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
+]);?>
+                    
+                </li>
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                         <span class="hidden-xs">Alexander Pierce</span>
                     </a>
+
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
@@ -277,5 +284,6 @@ use yii\helpers\Html;
                 </li>
             </ul>
         </div>
+
     </nav>
 </header>

@@ -9,9 +9,25 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
+    'name'=>'CIA',
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
+    'sourceLanguage' => 'en-US',
+    'bootstrap' => ['log','translatemanager','languagepicker'],
     'modules' => [
+        'translatemanager' => [
+            'class' => 'lajax\translatemanager\Module',
+            'allowedIPs' => ['127.0.0.1', '::1', '*'],
+         //   'layout' => 'main',               
+            'root' => '@backend',
+            'scanRootParentDirectory' => true, // Whether scan the defined `root` parent directory, or the folder itself.
+            'roles' => ['su'],               // For setting access levels to the translating interface.
+            'tmpDir' => '@runtime',         // Writable directory for the client-side temporary language files.
+            'phpTranslators' => ['::t'],    // list of the php function for translating messages.
+            'jsTranslators' => ['lajax.t'], // list of the js function for translating messages.
+            'patterns' => ['*.js', '*.php'],// list of file extensions that contain language elements.
+            'ignoredCategories' => ['yii'], // these categories won't be included in the language database.
+            'ignoredItems' => ['config'],
+        ],
         'admin' => [
             'class' => 'mdm\admin\Module',
             'layout' => 'left-menu',
@@ -23,6 +39,35 @@ return [
             ],
         ],
     'components' => [
+        'languagepicker' => [
+            'class' => 'lajax\languagepicker\Component',
+            'languages' => function () {                        // List of available languages (icons and text)
+                return \lajax\translatemanager\models\Language::getLanguageNames(true);
+            },
+            'cookieName' => 'language',                         // Name of the cookie.
+            'cookieDomain' => 'cia-bezlim.c9users.io',                    // Domain of the cookie.
+            'expireDays' => 64,                                 // The expiration time of the cookie is 64 days.
+            'callback' => function() {
+                if (!\Yii::$app->user->isGuest) {
+                    $user = \Yii::$app->user->identity;
+                    $user->language = \Yii::$app->language;
+                    $user->save();
+                }
+            }
+        ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    'db' => 'db',
+                    'sourceLanguage' => 'en-US', // Developer language
+                    'sourceMessageTable' => '{{%language_source}}',
+                    'messageTable' => '{{%language_translate}}',
+                    'cachingDuration' => 86400,
+                    'enableCaching' => false,
+                ],
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -50,20 +95,20 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
         ],
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
             'site/*',
-            'admin/*',
+            '*',
         ]
     ],
     'params' => $params,

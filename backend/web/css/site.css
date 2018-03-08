@@ -118,3 +118,15 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+.language {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 5px;
+    color: #fff;
+}
+.language a {
+    color: #fff;
+}
+.language ul a {
+    color: #337ab7;
+}
