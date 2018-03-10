@@ -17,7 +17,7 @@ return [
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
             'allowedIPs' => ['127.0.0.1', '::1', '*'],
-         //   'layout' => 'main',               
+          //  'layout' => 'null',               
             'root' => '@backend',
             'scanRootParentDirectory' => true, // Whether scan the defined `root` parent directory, or the folder itself.
             'roles' => ['su'],               // For setting access levels to the translating interface.
@@ -36,6 +36,14 @@ return [
         'gii' => [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['127.0.0.1', '::1', '*'],
+            'generators' => [ //here
+                'crud' => [
+                    'class' => 'yii\gii\generators\crud\Generator',
+                    'templates' => [
+                        'adminlte' => '@vendor/dmstr/yii2-adminlte-asset/gii/templates/crud/simple',
+                    ]
+                ]
+            ],
             ],
         ],
     'components' => [
@@ -82,6 +90,7 @@ return [
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
+  //          'allowedIPs' => ['127.0.0.1', '::1', '*'],
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
