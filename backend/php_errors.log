@@ -133,3 +133,83 @@
 [08-Mar-2018 11:40:36 UTC] PHP  20. yii\base\View->render() /home/ubuntu/workspace/cia/backend/views/layouts/main.php:46
 [08-Mar-2018 11:40:36 UTC] PHP  21. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
 [08-Mar-2018 11:40:36 UTC] PHP  22. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[29-Mar-2018 19:17:21 UTC] PHP Fatal error:  Class 'backend\models\User' not found in /home/ubuntu/workspace/cia/backend/models/Investors.php on line 43
+[29-Mar-2018 19:17:21 UTC] PHP Stack trace:
+[29-Mar-2018 19:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[29-Mar-2018 19:17:21 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[29-Mar-2018 19:17:21 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[29-Mar-2018 19:17:21 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[29-Mar-2018 19:17:21 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[29-Mar-2018 19:17:21 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[29-Mar-2018 19:17:21 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:17:21 UTC] PHP   8. yii\gii\controllers\DefaultController->actionView() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:17:21 UTC] PHP   9. yii\gii\generators\crud\Generator->generate() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:61
+[29-Mar-2018 19:17:21 UTC] PHP  10. yii\gii\Generator->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/Generator.php:183
+[29-Mar-2018 19:17:21 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/Generator.php:317
+[29-Mar-2018 19:17:21 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[29-Mar-2018 19:17:21 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[29-Mar-2018 19:17:21 UTC] PHP  14. yii\base\Model->safeAttributes() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php:11
+[29-Mar-2018 19:17:21 UTC] PHP  15. yii\base\Model->scenarios() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:785
+[29-Mar-2018 19:17:21 UTC] PHP  16. yii\base\Model->getValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:189
+[29-Mar-2018 19:17:21 UTC] PHP  17. yii\base\Model->createValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:420
+[29-Mar-2018 19:17:21 UTC] PHP  18. backend\models\Investors->rules() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:454
+[29-Mar-2018 19:17:33 UTC] PHP Fatal error:  Class 'backend\models\User' not found in /home/ubuntu/workspace/cia/backend/models/Investors.php on line 43
+[29-Mar-2018 19:17:33 UTC] PHP Stack trace:
+[29-Mar-2018 19:17:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[29-Mar-2018 19:17:33 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[29-Mar-2018 19:17:33 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[29-Mar-2018 19:17:33 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[29-Mar-2018 19:17:33 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[29-Mar-2018 19:17:33 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[29-Mar-2018 19:17:33 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:17:33 UTC] PHP   8. yii\gii\controllers\DefaultController->actionView() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:17:33 UTC] PHP   9. yii\gii\generators\crud\Generator->generate() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:61
+[29-Mar-2018 19:17:33 UTC] PHP  10. yii\gii\Generator->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/Generator.php:183
+[29-Mar-2018 19:17:33 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/Generator.php:317
+[29-Mar-2018 19:17:33 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[29-Mar-2018 19:17:33 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[29-Mar-2018 19:17:33 UTC] PHP  14. yii\base\Model->safeAttributes() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php:11
+[29-Mar-2018 19:17:33 UTC] PHP  15. yii\base\Model->scenarios() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:785
+[29-Mar-2018 19:17:33 UTC] PHP  16. yii\base\Model->getValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:189
+[29-Mar-2018 19:17:33 UTC] PHP  17. yii\base\Model->createValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:420
+[29-Mar-2018 19:17:33 UTC] PHP  18. backend\models\Investors->rules() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:454
+[29-Mar-2018 19:20:29 UTC] PHP Fatal error:  Class 'backend\models\User' not found in /home/ubuntu/workspace/cia/backend/models/Investors.php on line 41
+[29-Mar-2018 19:20:29 UTC] PHP Stack trace:
+[29-Mar-2018 19:20:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[29-Mar-2018 19:20:29 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[29-Mar-2018 19:20:29 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[29-Mar-2018 19:20:29 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[29-Mar-2018 19:20:29 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[29-Mar-2018 19:20:29 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[29-Mar-2018 19:20:29 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:20:29 UTC] PHP   8. yii\gii\controllers\DefaultController->actionView() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:20:29 UTC] PHP   9. yii\gii\generators\crud\Generator->generate() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:61
+[29-Mar-2018 19:20:29 UTC] PHP  10. yii\gii\Generator->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/Generator.php:183
+[29-Mar-2018 19:20:29 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/Generator.php:317
+[29-Mar-2018 19:20:29 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[29-Mar-2018 19:20:29 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[29-Mar-2018 19:20:29 UTC] PHP  14. yii\base\Model->safeAttributes() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php:11
+[29-Mar-2018 19:20:29 UTC] PHP  15. yii\base\Model->scenarios() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:785
+[29-Mar-2018 19:20:29 UTC] PHP  16. yii\base\Model->getValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:189
+[29-Mar-2018 19:20:29 UTC] PHP  17. yii\base\Model->createValidators() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:420
+[29-Mar-2018 19:20:29 UTC] PHP  18. backend\models\Investors->rules() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Model.php:454
+[29-Mar-2018 19:47:49 UTC] PHP Fatal error:  Class 'backend\controllers\UploadedFile' not found in /home/ubuntu/workspace/cia/backend/controllers/InvestorsController.php on line 70
+[29-Mar-2018 19:47:49 UTC] PHP Stack trace:
+[29-Mar-2018 19:47:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[29-Mar-2018 19:47:49 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[29-Mar-2018 19:47:49 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[29-Mar-2018 19:47:49 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[29-Mar-2018 19:47:49 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[29-Mar-2018 19:47:49 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[29-Mar-2018 19:47:49 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 19:47:49 UTC] PHP   8. backend\controllers\InvestorsController->actionCreate() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 20:00:52 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/ubuntu/workspace/cia/backend/controllers/InvestorsController.php on line 69
+[29-Mar-2018 20:00:52 UTC] PHP Stack trace:
+[29-Mar-2018 20:00:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/backend/web/index.php:0
+[29-Mar-2018 20:00:52 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/backend/web/index.php:17
+[29-Mar-2018 20:00:52 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[29-Mar-2018 20:00:52 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[29-Mar-2018 20:00:52 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[29-Mar-2018 20:00:52 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[29-Mar-2018 20:00:52 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[29-Mar-2018 20:00:52 UTC] PHP   8. backend\controllers\InvestorsController->actionCreate() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57

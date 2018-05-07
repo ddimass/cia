@@ -138,9 +138,62 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+
+   private function get_web_page( $url )
+{
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_COOKIEJAR, '/tmp/'.$cookie);
+    curl_setopt($ch, CURLOPT_COOKIEFILE, '/tmp/'.$cookie);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    $first_step = explode('<input name="authenticity_token" type="hidden" value="' , $response ); 
+    $second_step = explode('">' , $first_step[1] ); 
+    $csrf = $second_step[0];
+    //echo $csrf;
+    $username = "a.mestovsky@liteforex.com";
+    $password = "kefixedo";
+    $dir = '/home/ubuntu/workspace/cia';
+    $url="https://www.dividend.com/login/"; 
+    $postinfo = "authenticity_token=".$csrf."&redirect_url=/"."&amember_login=".$username."&amember_pass=".$password."&commit=Login";
+    $params = array(
+        'authenticity_token' => $csrf,
+        'amember_login' => $username,
+        'amember_pass' => $password
+    );
+    $cookie= $dir."/cookies.txt";
+    curl_setopt($ch, CURLOPT_HEADER, false); 
+    curl_setopt($ch, CURLOPT_NOBODY, false); 
+    curl_setopt($ch, CURLOPT_URL, $url); 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
+    curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie); 
+    curl_setopt($ch, CURLOPT_COOKIE, "cookiename=0"); 
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.12) Gecko/20050915 Firefox/1.0.7"); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    curl_setopt($ch, CURLOPT_REFERER, $url); 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); 
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); 
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-CSRF-Token:' .  $csrf));
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
+    curl_setopt($ch, CURLOPT_POST, 1); 
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params)); 
+    curl_exec($ch); 
+
+    //page with the content to grab 
+    curl_setopt($ch, CURLOPT_URL, "http://www.dividend.com/ex-dividend-dates.php"); 
+    //do stuff with the info with DomDocument() etc 
+    $html = curl_exec($ch); 
+    curl_close($ch);
+  return $html;
+}
     public function actionAbout()
     {
-        return $this->render('about');
+         
+        //$page = $this->get_web_page( 'http://www.dividend.com/ex-dividend-dates.php');
+        $page = $this->get_web_page( 'http://www.dividend.com/login/');
+       // $table = $page->find('tbody')->eq(0)->find('tr');
+
+        return $this->render('about', ['page'=>$page]);
     }
 
     /**

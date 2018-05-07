@@ -1,0 +1,78 @@
+Codeception PHP Testing Framework v2.4.0
+Powered by PHPUnit 4.8.36 by Sebastian Bergmann and contributors.
+
+
+[common\tests]: tests from /home/ubuntu/workspace/cia/common
+
+
+[1mCommon\tests.unit Tests (3) [22m---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mLoginFormTest:[39;22m Login no user[32;1m✔[39;22m [35;1mLoginFormTest:[39;22m Login no user [32m(0.02s)[39m
+- [35;1mLoginFormTest:[39;22m Login wrong password[32;1m✔[39;22m [35;1mLoginFormTest:[39;22m Login wrong password [32m(0.59s)[39m
+- [35;1mLoginFormTest:[39;22m Login correct[32;1m✔[39;22m [35;1mLoginFormTest:[39;22m Login correct [32m(0.60s)[39m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[frontend\tests]: tests from /home/ubuntu/workspace/cia/frontend
+
+
+[1mFrontend\tests.functional Tests (12) [22m------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mAboutCest:[39;22m Check about[32;1m✔[39;22m [35;1mAboutCest:[39;22m Check about [32m(0.05s)[39m
+- [35;1mContactCest:[39;22m Check contact[32;1m✔[39;22m [35;1mContactCest:[39;22m Check contact [32m(0.03s)[39m
+- [35;1mContactCest:[39;22m Check contact submit no data[32;1m✔[39;22m [35;1mContactCest:[39;22m Check contact submit no data [32m(0.08s)[39m
+- [35;1mContactCest:[39;22m Check contact submit not correct email[32;1m✔[39;22m [35;1mContactCest:[39;22m Check contact submit not correct email [32m(0.06s)[39m
+- [35;1mContactCest:[39;22m Check contact submit correct data[32;1m✔[39;22m [35;1mContactCest:[39;22m Check contact submit correct data [32m(0.08s)[39m
+- [35;1mHomeCest:[39;22m Check open[32;1m✔[39;22m [35;1mHomeCest:[39;22m Check open [32m(0.03s)[39m
+- [35;1mLoginCest:[39;22m Check empty[32;1m✔[39;22m [35;1mLoginCest:[39;22m Check empty [32m(0.05s)[39m
+- [35;1mLoginCest:[39;22m Check wrong password[32;1m✔[39;22m [35;1mLoginCest:[39;22m Check wrong password [32m(0.05s)[39m
+- [35;1mLoginCest:[39;22m Check valid login[32;1m✔[39;22m [35;1mLoginCest:[39;22m Check valid login [32m(0.64s)[39m
+- [35;1mSignupCest:[39;22m Signup with empty fields[32;1m✔[39;22m [35;1mSignupCest:[39;22m Signup with empty fields [32m(0.06s)[39m
+- [35;1mSignupCest:[39;22m Signup with wrong email[32;1m✔[39;22m [35;1mSignupCest:[39;22m Signup with wrong email [32m(0.06s)[39m
+- [35;1mSignupCest:[39;22m Signup successfully[32;1m✔[39;22m [35;1mSignupCest:[39;22m Signup successfully [32m(0.66s)[39m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[1mFrontend\tests.unit Tests (8) [22m-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mContactFormTest:[39;22m Send email[32;1m✔[39;22m [35;1mContactFormTest:[39;22m Send email [32m(0.01s)[39m
+- [35;1mPasswordResetRequestFormTest:[39;22m Send message with wrong email address[32;1m✔[39;22m [35;1mPasswordResetRequestFormTest:[39;22m Send message with wrong email address [32m(0.05s)[39m
+- [35;1mPasswordResetRequestFormTest:[39;22m Not send emails to inactive user[32;1m✔[39;22m [35;1mPasswordResetRequestFormTest:[39;22m Not send emails to inactive user [32m(0.04s)[39m
+- [35;1mPasswordResetRequestFormTest:[39;22m Send email successfully[32;1m✔[39;22m [35;1mPasswordResetRequestFormTest:[39;22m Send email successfully [32m(0.06s)[39m
+- [35;1mResetPasswordFormTest:[39;22m Reset wrong token[32;1m✔[39;22m [35;1mResetPasswordFormTest:[39;22m Reset wrong token [32m(0.04s)[39m
+- [35;1mResetPasswordFormTest:[39;22m Reset correct token[32;1m✔[39;22m [35;1mResetPasswordFormTest:[39;22m Reset correct token [32m(0.64s)[39m
+- [35;1mSignupFormTest:[39;22m Correct signup[32;1m✔[39;22m [35;1mSignupFormTest:[39;22m Correct signup [32m(1.22s)[39m
+- [35;1mSignupFormTest:[39;22m Not correct signup[32;1m✔[39;22m [35;1mSignupFormTest:[39;22m Not correct signup [32m(0.04s)[39m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[backend\tests]: tests from /home/ubuntu/workspace/cia/backend
+
+
+[1mBackend\tests.functional Tests (1) [22m--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mLoginCest:[39;22m Login user[31;1m✖[39;22m [35;1mLoginCest:[39;22m Login user [32m(0.06s)[39m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[1mBackend\tests.unit Tests (0) [22m--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Time: 6.79 seconds, Memory: 50.00MB
+
+There was 1 failure:
+
+---------
+1) [35;1mLoginCest:[39;22m Login user
+[37;41;1m Test [39;49;22m tests/functional/LoginCest.php:loginUser
+[37;41;1m Step [39;49;22m See "Alexander Pierce"
+[37;41;1m Fail [39;49;22m Failed asserting that  on page /site/login
+-->  Sign In AdminLTE Sign in to start your session Incorrect username or password. Remember Me Sign in - OR - Sign in using Facebook Sign in using Google+ I forgot my password Register a new membership 
+--> contains "Alexander Pierce".
+[33m
+Scenario Steps:
+[39m
+[1m 5. $I->see("Alexander Pierce")[22m at [32mtests/functional/LoginCest.php:40[39m
+ 4. $I->click("login-button") at [32mtests/functional/LoginCest.php:38[39m
+ 3. $I->fillField("LoginForm[password]","Windowsmustdie1") at [32mtests/functional/LoginCest.php:37[39m
+ 2. $I->fillField("LoginForm[username]","root") at [32mtests/functional/LoginCest.php:36[39m
+ 1. $I->amOnPage("/site/login") at [32mtests/functional/LoginCest.php:35[39m
+
+
+[37;41mFAILURES![0m
+[37;41mTests: 24[0m[37;41m, Assertions: 68[0m[37;41m, Failures: 1[0m[37;41m.[0m

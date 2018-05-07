@@ -21,7 +21,8 @@
         "mdmsoft/yii2-admin": "~2.0",
         "dmstr/yii2-adminlte-asset": "^2.1",
         "lajax/yii2-translate-manager":"~1",
-        "lajax/yii2-language-picker": "1.*"
+        "lajax/yii2-language-picker": "1.*",
+        "electrolinux/phpquery": ">0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

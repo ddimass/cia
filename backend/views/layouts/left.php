@@ -32,7 +32,7 @@
                 'items' => [
                     
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                    ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
+                    ['label' => Yii::t('main', 'Investor'), 'icon' => 'file-code-o', 'url' => ['/investors']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => Yii::t('main', 'Administration'),

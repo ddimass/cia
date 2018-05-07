@@ -1,0 +1,429 @@
+[23-Mar-2018 19:44:04 UTC] PHP Fatal error:  Call to undefined function frontend\controllers\get_web_page() in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 170
+[23-Mar-2018 19:44:04 UTC] PHP Stack trace:
+[23-Mar-2018 19:44:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 19:44:04 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 19:44:04 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 19:44:04 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 19:44:04 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[23-Mar-2018 19:44:04 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[23-Mar-2018 19:44:04 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 19:44:04 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 19:46:36 UTC] PHP Fatal error:  Class 'frontend\controllers\phpQuery' not found in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 166
+[23-Mar-2018 19:46:36 UTC] PHP Stack trace:
+[23-Mar-2018 19:46:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 19:46:36 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 19:46:36 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 19:46:36 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 19:46:36 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[23-Mar-2018 19:46:36 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[23-Mar-2018 19:46:36 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 19:46:36 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 19:46:36 UTC] PHP   9. frontend\controllers\SiteController->get_web_page() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:171
+[23-Mar-2018 19:47:44 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 167.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 167.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'cia-bezlim.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://cia-bezlim.c9users.io/cia/frontend/web/',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_COOKIE' => 'language=2a81db9946ae54219fbd82e9ff64759ed83b571e1142aac915c760fde282f67ea%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; XDEBUG_SESSION=cloud9ide; advanced-frontend=5fjfo7d82v191f6p4d0b36t6q5; _csrf-frontend=f1b6afdf753136c3ee6e21b5a8b622ff472435d871e1dc746a41f78c1b8c39b0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22q1P8QrOSToLkbSW7dJi5G2sIKdCo7jk-%22%3B%7D; optimizelyEndUserId=oeu1521834275100r0.3385723770209348; optimizelySegments=%7B%22173969894%22%3A%22false%22%2C%22175048212%22%3A%22direct%22%2C%22175049386%22%3A%22gc%22%7D; optimizelyBuckets=%7B%7D; __qca=P0-429600651-1521834276561; __gads=ID=91a14492b1833eb0:T=1521834278:S=ALNI_MaB91RrS8ltJqP8RWm6cXDwVCSojA; _pk_id.4.4772=5e3d84373efe713b.1521834278.1.1521834278.1521834278.; _pk_ses.4.4772=*',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'eu',
+    'HTTP_X_FORWARDED_FOR' => '95.55.212.228',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v6.11.2/bin:/usr/local/rvm/gems/ruby-2.4.0/bin:/usr/local/rvm/gems/ruby-2.4.0@global/bin:/usr/local/rvm/rubies/ruby-2.4.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at cia-bezlim.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'cia-bezlim.c9users.io',
+    'SERVER_ADDR' => '172.17.0.21',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.185',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/cia/frontend/web/index.php',
+    'REMOTE_PORT' => '38648',
+    'REDIRECT_URL' => '/cia/frontend/web/site/about',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/cia/frontend/web/site/about',
+    'SCRIPT_NAME' => '/cia/frontend/web/index.php',
+    'PHP_SELF' => '/cia/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1521834463.8320000171661376953125,
+    'REQUEST_TIME' => 1521834463,
+]
+[23-Mar-2018 19:48:50 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 167.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 167.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'cia-bezlim.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://cia-bezlim.c9users.io/cia/frontend/web/',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_COOKIE' => 'language=2a81db9946ae54219fbd82e9ff64759ed83b571e1142aac915c760fde282f67ea%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; XDEBUG_SESSION=cloud9ide; advanced-frontend=5fjfo7d82v191f6p4d0b36t6q5; _csrf-frontend=f1b6afdf753136c3ee6e21b5a8b622ff472435d871e1dc746a41f78c1b8c39b0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22q1P8QrOSToLkbSW7dJi5G2sIKdCo7jk-%22%3B%7D; optimizelyEndUserId=oeu1521834275100r0.3385723770209348; optimizelySegments=%7B%22173969894%22%3A%22false%22%2C%22175048212%22%3A%22direct%22%2C%22175049386%22%3A%22gc%22%7D; optimizelyBuckets=%7B%7D; __qca=P0-429600651-1521834276561; __gads=ID=91a14492b1833eb0:T=1521834278:S=ALNI_MaB91RrS8ltJqP8RWm6cXDwVCSojA; _pk_ses.4.4772=*; _pk_id.4.4772=5e3d84373efe713b.1521834278.1.1521834464.1521834278.',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'eu',
+    'HTTP_X_FORWARDED_FOR' => '95.55.212.228',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v6.11.2/bin:/usr/local/rvm/gems/ruby-2.4.0/bin:/usr/local/rvm/gems/ruby-2.4.0@global/bin:/usr/local/rvm/rubies/ruby-2.4.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at cia-bezlim.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'cia-bezlim.c9users.io',
+    'SERVER_ADDR' => '172.17.0.21',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.97',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/cia/frontend/web/index.php',
+    'REMOTE_PORT' => '49736',
+    'REDIRECT_URL' => '/cia/frontend/web/site/about',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/cia/frontend/web/site/about',
+    'SCRIPT_NAME' => '/cia/frontend/web/index.php',
+    'PHP_SELF' => '/cia/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1521834530.190000057220458984375,
+    'REQUEST_TIME' => 1521834530,
+]
+[23-Mar-2018 19:51:19 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 174
+[23-Mar-2018 19:51:19 UTC] PHP Stack trace:
+[23-Mar-2018 19:51:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 19:51:19 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 19:51:19 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 19:51:19 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 19:51:19 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:522
+[23-Mar-2018 19:51:19 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:596
+[23-Mar-2018 19:51:19 UTC] PHP   7. class_exists() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 19:51:19 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 19:51:19 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 19:51:40 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 174
+[23-Mar-2018 19:51:40 UTC] PHP Stack trace:
+[23-Mar-2018 19:51:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 19:51:40 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 19:51:40 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 19:51:40 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 19:51:40 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:522
+[23-Mar-2018 19:51:40 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:596
+[23-Mar-2018 19:51:40 UTC] PHP   7. class_exists() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 19:51:40 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 19:51:40 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 20:09:25 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 164.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 164.' in /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/ubuntu/workspace/cia/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'cia-bezlim.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://cia-bezlim.c9users.io/cia/frontend/web/site/about',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_COOKIE' => 'language=2a81db9946ae54219fbd82e9ff64759ed83b571e1142aac915c760fde282f67ea%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; XDEBUG_SESSION=cloud9ide; advanced-frontend=5fjfo7d82v191f6p4d0b36t6q5; _csrf-frontend=f1b6afdf753136c3ee6e21b5a8b622ff472435d871e1dc746a41f78c1b8c39b0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22q1P8QrOSToLkbSW7dJi5G2sIKdCo7jk-%22%3B%7D; optimizelyEndUserId=oeu1521834275100r0.3385723770209348; optimizelySegments=%7B%22173969894%22%3A%22false%22%2C%22175048212%22%3A%22direct%22%2C%22175049386%22%3A%22gc%22%7D; optimizelyBuckets=%7B%7D; __qca=P0-429600651-1521834276561; __gads=ID=91a14492b1833eb0:T=1521834278:S=ALNI_MaB91RrS8ltJqP8RWm6cXDwVCSojA; _pk_ses.4.4772=*; _pk_id.4.4772=5e3d84373efe713b.1521834278.1.1521834551.1521834278.',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'eu',
+    'HTTP_X_FORWARDED_FOR' => '95.55.212.228',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v6.11.2/bin:/usr/local/rvm/gems/ruby-2.4.0/bin:/usr/local/rvm/gems/ruby-2.4.0@global/bin:/usr/local/rvm/rubies/ruby-2.4.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at cia-bezlim.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'cia-bezlim.c9users.io',
+    'SERVER_ADDR' => '172.17.0.21',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.185',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/cia/frontend/web/index.php',
+    'REMOTE_PORT' => '50364',
+    'REDIRECT_URL' => '/cia/frontend/web/site/about',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/cia/frontend/web/site/about',
+    'SCRIPT_NAME' => '/cia/frontend/web/index.php',
+    'PHP_SELF' => '/cia/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1521835764.5559999942779541015625,
+    'REQUEST_TIME' => 1521835764,
+]
+[23-Mar-2018 20:51:58 UTC] PHP Fatal error:  Call to undefined function frontend\controllers\isAuth() in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 164
+[23-Mar-2018 20:51:58 UTC] PHP Stack trace:
+[23-Mar-2018 20:51:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 20:51:58 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 20:51:58 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 20:51:58 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 20:51:58 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[23-Mar-2018 20:51:58 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[23-Mar-2018 20:51:58 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 20:51:58 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 20:51:58 UTC] PHP   9. frontend\controllers\SiteController->get_web_page() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:177
+[23-Mar-2018 21:09:11 UTC] PHP Parse error:  syntax error, unexpected 'tbody' (T_STRING) in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 181
+[23-Mar-2018 21:09:11 UTC] PHP Stack trace:
+[23-Mar-2018 21:09:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 21:09:11 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 21:09:11 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 21:09:11 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 21:09:11 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:522
+[23-Mar-2018 21:09:11 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:596
+[23-Mar-2018 21:09:11 UTC] PHP   7. class_exists() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 21:09:11 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 21:09:11 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 21:24:31 UTC] PHP Fatal error:  Class 'frontend\controllers\DomDocument' not found in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 158
+[23-Mar-2018 21:24:31 UTC] PHP Stack trace:
+[23-Mar-2018 21:24:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 21:24:31 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 21:24:31 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 21:24:31 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 21:24:31 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[23-Mar-2018 21:24:31 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[23-Mar-2018 21:24:31 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 21:24:31 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[23-Mar-2018 21:24:31 UTC] PHP   9. frontend\controllers\SiteController->get_web_page() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:210
+[23-Mar-2018 22:02:44 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 170
+[23-Mar-2018 22:02:44 UTC] PHP Stack trace:
+[23-Mar-2018 22:02:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 22:02:44 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 22:02:44 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 22:02:44 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 22:02:44 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:522
+[23-Mar-2018 22:02:44 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:596
+[23-Mar-2018 22:02:44 UTC] PHP   7. class_exists() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 22:02:44 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 22:02:44 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 22:03:00 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php on line 171
+[23-Mar-2018 22:03:00 UTC] PHP Stack trace:
+[23-Mar-2018 22:03:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[23-Mar-2018 22:03:00 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[23-Mar-2018 22:03:00 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[23-Mar-2018 22:03:00 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[23-Mar-2018 22:03:00 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:522
+[23-Mar-2018 22:03:00 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:596
+[23-Mar-2018 22:03:00 UTC] PHP   7. class_exists() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 22:03:00 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[23-Mar-2018 22:03:00 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:637
+[01-Apr-2018 18:50:57 UTC] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 41
+[01-Apr-2018 18:50:58 UTC] PHP Stack trace:
+[01-Apr-2018 18:50:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 18:50:58 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 18:50:58 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 18:50:58 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 18:50:58 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 18:50:58 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 18:50:58 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 18:50:58 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 18:50:58 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 18:50:58 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 18:50:58 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 18:50:58 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 19:01:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 44
+[01-Apr-2018 19:01:05 UTC] PHP Stack trace:
+[01-Apr-2018 19:01:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 19:01:05 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 19:01:05 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 19:01:05 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 19:01:05 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 19:01:05 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 19:01:05 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:01:05 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:01:05 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 19:01:05 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 19:01:05 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 19:01:05 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 19:25:26 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 48
+[01-Apr-2018 19:25:26 UTC] PHP Stack trace:
+[01-Apr-2018 19:25:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 19:25:26 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 19:25:26 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 19:25:26 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 19:25:26 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 19:25:26 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 19:25:26 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:25:26 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:25:26 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 19:25:26 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 19:25:26 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 19:25:26 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 19:28:29 UTC] PHP Fatal error:  Call to undefined function print_a() in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 44
+[01-Apr-2018 19:28:29 UTC] PHP Stack trace:
+[01-Apr-2018 19:28:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 19:28:29 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 19:28:29 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 19:28:29 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 19:28:29 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 19:28:29 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 19:28:29 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:28:29 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 19:28:29 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 19:28:29 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 19:28:29 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 19:28:29 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 19:28:29 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[01-Apr-2018 20:24:00 UTC] PHP Fatal error:  Call to undefined function imagefrompng() in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 83
+[01-Apr-2018 20:24:00 UTC] PHP Stack trace:
+[01-Apr-2018 20:24:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 20:24:00 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 20:24:00 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 20:24:00 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 20:24:00 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 20:24:00 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 20:24:00 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 20:24:00 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 20:24:00 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 20:24:00 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 20:24:00 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 20:24:00 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 20:24:00 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[01-Apr-2018 20:33:26 UTC] PHP Parse error:  syntax error, unexpected 'imagecolorset' (T_STRING) in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 86
+[01-Apr-2018 20:33:26 UTC] PHP Stack trace:
+[01-Apr-2018 20:33:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 20:33:26 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 20:33:26 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 20:33:26 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 20:33:26 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 20:33:26 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 20:33:26 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 20:33:26 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 20:33:26 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 20:33:26 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 20:33:26 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 20:33:26 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 21:18:03 UTC] PHP Fatal error:  Class 'Imagick' not found in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 81
+[01-Apr-2018 21:18:03 UTC] PHP Stack trace:
+[01-Apr-2018 21:18:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 21:18:03 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 21:18:03 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 21:18:03 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 21:18:03 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 21:18:03 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 21:18:03 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 21:18:03 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 21:18:03 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 21:18:03 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 21:18:03 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 21:18:03 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 21:18:03 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[01-Apr-2018 22:14:07 UTC] PHP Parse error:  syntax error, unexpected 'ж' (T_STRING) in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 91
+[01-Apr-2018 22:14:07 UTC] PHP Stack trace:
+[01-Apr-2018 22:14:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 22:14:07 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 22:14:07 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 22:14:07 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 22:14:07 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 22:14:07 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 22:14:07 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 22:14:07 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 22:14:07 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 22:14:07 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 22:14:07 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 22:14:07 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 23:16:27 UTC] PHP Fatal error:  Call to undefined method Imagick::colorize() in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 99
+[01-Apr-2018 23:16:27 UTC] PHP Stack trace:
+[01-Apr-2018 23:16:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 23:16:27 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 23:16:27 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 23:16:27 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 23:16:27 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 23:16:27 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 23:16:27 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:16:27 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:16:27 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 23:16:27 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 23:16:27 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 23:16:27 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 23:16:27 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[01-Apr-2018 23:17:10 UTC] PHP Fatal error:  Call to undefined method Imagick::colorize() in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 119
+[01-Apr-2018 23:17:10 UTC] PHP Stack trace:
+[01-Apr-2018 23:17:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 23:17:10 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 23:17:10 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 23:17:10 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 23:17:10 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 23:17:10 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 23:17:10 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:17:10 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:17:10 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 23:17:10 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 23:17:10 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 23:17:10 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 23:17:10 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
+[01-Apr-2018 23:24:22 UTC] PHP Fatal error:  Call to a member function opaquePaintImage() on a non-object in /home/ubuntu/workspace/cia/frontend/views/site/about.php on line 99
+[01-Apr-2018 23:24:22 UTC] PHP Stack trace:
+[01-Apr-2018 23:24:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cia/frontend/web/index.php:0
+[01-Apr-2018 23:24:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/cia/frontend/web/index.php:17
+[01-Apr-2018 23:24:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Application.php:386
+[01-Apr-2018 23:24:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/web/Application.php:103
+[01-Apr-2018 23:24:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Module.php:528
+[01-Apr-2018 23:24:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:157
+[01-Apr-2018 23:24:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:24:22 UTC] PHP   8. frontend\controllers\SiteController->actionAbout() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/InlineAction.php:57
+[01-Apr-2018 23:24:22 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/cia/frontend/controllers/SiteController.php:196
+[01-Apr-2018 23:24:22 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/Controller.php:384
+[01-Apr-2018 23:24:22 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:156
+[01-Apr-2018 23:24:22 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:254
+[01-Apr-2018 23:24:22 UTC] PHP  13. require() /home/ubuntu/workspace/cia/vendor/yiisoft/yii2/base/View.php:336
